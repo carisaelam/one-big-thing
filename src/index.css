@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "JetBrains Mono";
+}
+
+body {
+  background: linear-gradient(135deg, #3faaaa65, #3d3d8a94);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.first__page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  min-width: 15rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 139, 0.377);
+  background-color: #ffffffd0;
+}
+
+.first__page h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.input__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+form input {
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  background-color: hsla(0, 0%, 100%, 0.588);
+  box-shadow: 0 0 3px 4px rgba(223, 223, 223, 0.33);
+  border: none;
+  text-align: center;
+}
+
+.first__page button {
+  padding: 0.5rem 1rem;
+  background-color: hsla(128, 71%, 35%, 0.836);
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.first__page button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.318);
+}
+
+.first__page button:active {
+  background-color: hsl(231, 68%, 33%);
+  transform: scale(1.09);
+  transition: 0s;
+}
+
+.second__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  min-width: 15rem;
+  min-height: 10rem;
+  height: fit-content;
+  box-shadow: 0 3px 10px rgba(0, 0, 139, 0.377);
+  background-color: #060727d0;
+  color: white;
+}
+
+.second__page h2 {
+  margin-bottom: 1.5rem;
+  height: auto;
+}
+
+.second__page button {
+  padding: 0.2rem 0.5rem;
+  background-color: hsla(128, 77%, 46%, 0.72);
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.second__page button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.318);
+}
+
+.second__page button:active {
+  background-color: hsla(128, 77%, 26%, 0.72);
+  box-shadow: inset 0 0 5px black;
+  transform: scale(1.09);
+}
+
+.check {
+  width: 2rem;
+}
+
+.second__page button p {
+  margin-left: 0.2rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 3px;
+  font-size: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: hsla(240, 100%, 50%, 0.585);
+}
+
+footer img {
+  width: 0.6rem;
+  height: auto;
+  margin-left: 0.2rem;
+  transform: translateY(0.1rem);
+}
