@@ -43,7 +43,7 @@ export default function App() {
   return (
     <main>
       <div style={submitted ? off : on} className="first__page">
-        <h1>What is your "One Thing"?</h1>
+        <h1>One Thing: </h1>
         <div className="input__container">
           <form onSubmit={submitPageOne}>
             <input
@@ -53,7 +53,7 @@ export default function App() {
               placeholder="type your thing"
               maxLength={40}
             />
-            <button>Submit</button>
+            <button>Lock it In</button>
           </form>
         </div>
       </div>
