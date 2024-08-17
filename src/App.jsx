@@ -62,7 +62,10 @@ export default function App() {
         <h2>{thing}</h2>
         <button onClick={submitPageTwo}>
           <p>Done!</p>
-          <img className="check" src="../checked.png"></img>
+          <img
+            className="check"
+            src="https://i.ibb.co/jR9zPsp/checked.png"
+          ></img>
         </button>
       </div>
 
@@ -77,7 +80,7 @@ export default function App() {
               Coding in Public
             </a>
           </span>
-          <img src="../youtube.png" alt="youtube-icon" />
+          <img src="https://i.ibb.co/7r8jFK0/youtube.png" alt="youtube-icon" />
         </p>
       </footer>
     </main>
