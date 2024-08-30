@@ -74,7 +74,7 @@ export default function App() {
       <footer>
         <p>
           Coded by:{' '}
-          <a href="https://carisaelam-social-links.netlify.app" target="blank">
+          <a href="https://github.com/carisaelam" target="blank">
             Carisa Elam
           </a>
         </p>
