@@ -1,8 +1,8 @@
-import React from "react";
-import JSConfetti from "js-confetti";
+import React from 'react';
+import JSConfetti from 'js-confetti';
 
 export default function App() {
-  const [thing, setThing] = React.useState("");
+  const [thing, setThing] = React.useState('');
   const [submitted, setSubmitted] = React.useState(false);
   const jsConfetti = new JSConfetti();
 
@@ -10,15 +10,19 @@ export default function App() {
     e.preventDefault();
     thing
       ? setSubmitted((prevSubmitted) => !prevSubmitted)
-      : alert("gotta type something!");
+      : alert('gotta type something!');
   }
 
   function submitPageTwo(e) {
     e.preventDefault();
     setSubmitted((prevSubmitted) => !prevSubmitted);
-    setThing("");
+    setThing('');
+    celebrate();
+  }
+
+  function celebrate() {
     jsConfetti.addConfetti({
-      emojis: ["🚽", "💩", "🐍", "🌈", "🦄", "🌞"],
+      emojis: ['🚽', '💩', '🐍', '🌈', '🦄', '🌞'],
       emojiSize: 100,
       confettiNumber: 30,
     });
@@ -26,6 +30,8 @@ export default function App() {
       confettiRadius: 6,
       confettiNumber: 700,
     });
+    const wooHoo = new Audio('./woo-hoo-82843.mp3');
+    wooHoo.play();
   }
 
   function handleChange(e) {
@@ -33,11 +39,11 @@ export default function App() {
   }
 
   const on = {
-    display: "flex",
+    display: 'flex',
   };
 
   const off = {
-    display: "none",
+    display: 'none',
   };
 
   return (
@@ -61,17 +67,13 @@ export default function App() {
       <div style={submitted ? on : off} className="second__page">
         <h2>{thing}</h2>
         <button onClick={submitPageTwo}>
-          <p>Done!</p>
-          <img
-            className="check"
-            src="https://i.ibb.co/jR9zPsp/checked.png"
-          ></img>
+          <p>Done! ✅</p>
         </button>
       </div>
 
       <footer>
         <p>
-          Inspired by{" "}
+          Inspired by{' '}
           <span>
             <a
               href="https://www.youtube.com/watch?v=s84yXvLOoio"
