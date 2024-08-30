@@ -163,8 +163,6 @@ form input {
   margin-left: 0.2rem;
 }
 
-/* TESTING */
-
 @keyframes pulse {
   0%,
   50% {
@@ -180,14 +178,20 @@ form input {
 footer {
   position: absolute;
   bottom: 3px;
-  font-size: 0.5rem;
+  font-size: .8rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 footer a {
   color: hsla(240, 100%, 50%, 0.585);
+}
+
+footer a:hover {
+  color: white;
+  font-weight: bold;
 }
 
 footer img {
@@ -235,5 +239,9 @@ footer img {
     font-size: 2rem;
     margin-bottom: 2rem;
     padding: 1rem;
+  }
+
+  footer {
+    font-size: 1rem;
   }
 }

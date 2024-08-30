@@ -73,6 +73,10 @@ export default function App() {
 
       <footer>
         <p>
+          Coded by:{' '}
+          <a href="https://carisaelam-social-links.netlify.app">Carisa Elam</a>
+        </p>
+        <p>
           Inspired by{' '}
           <span>
             <a
@@ -82,7 +86,6 @@ export default function App() {
               Coding in Public
             </a>
           </span>
-          <img src="https://i.ibb.co/7r8jFK0/youtube.png" alt="youtube-icon" />
         </p>
       </footer>
     </main>
